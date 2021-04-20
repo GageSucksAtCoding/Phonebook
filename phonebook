@@ -1,0 +1,25 @@
+import time
+
+def printText(sentence):
+  for char in sentence:
+    print(char, end ='',flush=True)
+    time.sleep(0.045)
+  print()
+
+Phone_book = ["479-582-9023", "666-666-6666", "518-483-9381"]
+
+Phone_number = input ("Who would you like to call? Chase Gage or Kelly >> ")
+if Phone_number == "Gage":
+  printText ("479-582-9023")
+  printText ("Calling Gage...")
+  printText ("CALL HAS GONE TO VOICEMAIL 'Yo wasup its Gage, I can't talk right now, im probably playing video games or something, catcha later!'")
+  if Phone_number == "Chase":
+    printText ("518-483-9381")
+    printText ("Calling Chase...")
+    printText ("CALL HAS GONE TO VOICEMAIL 'Sorry,CouldntPickUpProbablyDoingSomethingStupid BYYYYYYYE'")
+    if Phone_number == "Kelly":
+      printText ("666-666-6666")
+      printText ("Calling Kelly...")
+      printText ("CALL HAS GONE TO VOICEMAIL 'Hey its Kelly, I am probably riding my bike through a ring of fire or something so I cant talk right now, talk to ya later loser!'")
+else: 
+ print("SORRY! THAT PHONE NUMBER IS NOT AVAILABLE; TRY AGAIN")
